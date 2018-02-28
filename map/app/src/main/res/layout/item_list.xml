@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:id="@+id/stt" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Latitude"
+        android:textSize="16sp"
+        android:textColor="#f41414"
+        android:padding="5dp"
+        android:id="@+id/tvLat" />
+
+    <TextView
+        android:id="@+id/tvLong"
+        android:layout_width="6dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:text="Logitude"
+        android:textColor="#f41414"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#13940a"
+        android:layout_weight="3"
+        android:padding="5dp"
+        android:text="Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/tvName" />
+
+</LinearLayout>
