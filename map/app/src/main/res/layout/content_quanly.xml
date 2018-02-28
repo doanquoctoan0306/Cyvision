@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.tuan_dong.map.Activity.QuanLy"
+    tools:showIn="@layout/activity_quan_ly">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#f2ef40"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Danh sách Địa Điểm"
+        android:textColor="#0047fa"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvDS"
+        android:layout_width="match_parent"
+        android:layout_height="406dp" />
+</LinearLayout>

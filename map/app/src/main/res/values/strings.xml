@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Map</string>
+    <string name="map_api_key">AIzaSyBoSf97OdamaRsNgFzVsm2tlOh8cUd98gw</string>
+    <string name="action_map">Bản Đồ</string>
+    <string name="action_edit">Cập Nhật</string>
+    <string name="action_delete">Xóa</string>
+    <string name="action_listPlace">Danh Sách Địa Điểm</string>
+    <string name="action_phone">Danh Sách Số Điện Thoại</string>
+    <string name="action_keyboard">Bàn Phím</string>
+    <string name="action_setting">Cài Đặt</string>
+
+    <string name="button_back">Quay Lại</string>
+    <string name="button_cancel">Huỷ</string>
+    <string name="tv_list_phone">Danh Sách Số Điện Thoại</string>
+    <string name="tv_phone_name">Tên</string>
+    <string name="tv_phone_number">SDT</string>
+    <string name="tv_departure_text_default">Địa chỉ hiện tại...</string>
+
+    <string name="instruction_default">Hướng dẫn...</string>
+    <string name="cancel">Huỷ</string>
+</resources>
