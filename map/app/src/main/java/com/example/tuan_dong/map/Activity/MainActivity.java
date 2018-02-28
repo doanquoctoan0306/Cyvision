@@ -14,6 +14,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,6 +24,7 @@ import com.example.tuan_dong.map.R;
 import com.example.tuan_dong.map.Utils.ArduinoCommunicationUtils;
 import com.example.tuan_dong.map.Utils.MainMenuUtils;
 import com.example.tuan_dong.map.Utils.TextToSpeechUtils;
+import com.example.tuan_dong.map.detector.DetectorActivity;
 import com.example.tuan_dong.map.listener.CompassSensorListener;
 import com.example.tuan_dong.map.listener.MyArduinoKeyboardReadCallback;
 import com.felhr.usbserial.UsbSerialDevice;
@@ -156,6 +158,17 @@ public class MainActivity extends AppCompatActivity {
                         intent.getStringExtra(MainActivity.EXTRA_PHONE_NUMBER));
                 break;
         }
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if ((keyCode == KeyEvent.KEYCODE_VOLUME_DOWN)){
+            //Do something
+            Intent i = new Intent(MainActivity.this, DetectorActivity.class);
+            startActivity(i);
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
     @Override

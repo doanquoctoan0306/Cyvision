@@ -1,4 +1,4 @@
-wpackage com.example.tuan_dong.map.Activity;
+package com.example.tuan_dong.map.Activity;
 
 import android.app.Dialog;
 import android.content.Intent;

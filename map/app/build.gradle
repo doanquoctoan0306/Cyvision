@@ -5,12 +5,17 @@ android {
     buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.example.tuan_dong.map"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    sourceSets {
+        main {
+            jni.srcDirs = []
+        }
     }
     buildTypes {
         release {
@@ -33,6 +38,8 @@ dependencies {
     implementation 'com.android.support:design:26.+'
     implementation 'com.google.android.gms:play-services:11.8.0'
     compile 'com.github.felHR85:UsbSerial:4.5.2'
+    compile 'org.tensorflow:tensorflow-android:+'
 }
+
 
 
